@@ -1,0 +1,204 @@
+.phaseThird {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.clock {
+    width: 20px;
+    height: 20px;
+    --cent: 0;
+    background: linear-gradient(#91EAE4,#86A8E7,#7F7FD5);
+    border-radius: 50%;
+    position: relative;
+    color: rgba(0,0,0,0);
+    box-shadow: 3px 3px 8px #1A2980;
+    overflow: hidden;
+    
+}
+.clock span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotateZ(calc(var(--ang) * 30deg));
+}
+.clock span b {
+    display: inline-block;
+    transform: rotateZ(calc(var(--ang) * -30deg));
+}
+.clockHr {
+    width: 16%;
+    height: 16%;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(#eaafc8,#654ea3);
+    left: 45%;
+    top: 20%;
+    font-size: 0.2em;
+    box-shadow: 0.5px 0.5px 4px #1A2980;
+    transform: translateX(-50%);
+}
+.clockMi {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(#eaafc8,#654ea3);
+    left: 28%;
+    top: 35%;
+    font-size: 0.5em;
+    box-shadow: 1px 1px 4px #1A2980;
+    transform: translateX(-50%);
+}
+.clockMil {
+    width: 24%;
+    height: 24%;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(#eaafc8,#654ea3);
+    left: 43%;
+    top: 58%;
+    font-size: 0.1em;
+    box-shadow: 1px 1px 6px #1A2980;
+    transform: translateX(-50%);
+}
+#spaceCor1 {
+    padding-top: 3px;
+}
+#spaceCor2 {
+    margin-left: 3px;     
+ }
+.Hand {
+    --rotor: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 0px;
+    transform-origin: bottom;
+    transition: height 1s, width 1s;
+    transform: translateX(-50%) rotateZ(calc(var(--rotor) * 1deg));
+}
+.hourH {
+    width: 1px;
+    background: linear-gradient(#004e92,#000428);
+    border-top-left-radius: 0.2px;
+    border-top-right-radius: 0.2px;
+}
+.minH {
+    width: 2px;
+    background: linear-gradient(#004e92,#000428);
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+.milH {
+   width: 3px;
+   background: linear-gradient(#004e92,#000428);
+   border-top-left-radius: 2px;
+   border-top-right-radius: 2px;
+}
+.yearH {
+   width: 8px;
+   background: linear-gradient(#fdeff9,#7303c0,#03001e);
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   z-index: 10;
+}
+.monthH {
+   width: 6px;
+   background: linear-gradient(#004e92,#000428);
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   z-index: 10;
+}
+.dayH {
+   width: 4px;
+   background: linear-gradient(#6441A5,#2a0845,#03001e);
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   z-index: 10;
+}
+
+.clockHr::after,
+.clockMi::after,
+.clockMil::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: linear-gradient(#24243e,#302b63,#0f0c29);
+    transform: translate(-50%, -50%);
+    opacity: var(--cent);
+}
+.clockHr::after {
+    width: 2px;
+    height: 2px;
+}
+.clockMi::after {
+    width: 3px;
+    height: 3px;
+}
+.clockMil::after {
+    width: 4px;
+    height: 4px;
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#24243e,#302b63,#0f0c29);
+    opacity: var(--cent);
+    z-index: 11;
+}
+
+#secR {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 12;
+    transform: rotateZ(calc(var(--rotor) * 1deg));
+}
+#secR i {
+    width: 7%;
+    height: 7%;
+    position: absolute;
+    left: 50%;
+    top: 1px;
+    border-radius: 50%;
+    background: linear-gradient(#654ea3,#eaafc8);
+    transform: translateX(-50%);
+}
+
+.Floaterpt {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 18;
+}
+.clockInclude {
+    font-size: 475%;
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.subC,
+.Hand {
+    opacity: 0;
+}
+
+.clock,
+.clockMil,
+.clockMi,
+.clockHr {
+    transition: 1s;
+}

@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100wh;
+    overflow: hidden;
+    background-color: #b3f5ff;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Garamond, serif;
+}
+.phaseOne {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:white;
+}
+.name {
+    outline: none;
+    border: none;
+    padding: 10px 0px 6px 10px;
+    font-size: 17px;
+    width: 15em;
+    border-radius: 8px;
+    color: white;
+}
+.datebtn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.dateb {
+    outline: none;
+    color: white;
+    height: 2.5em;
+    border-radius: 5px;
+    border: none;
+}
+.click {
+    font-family: courier;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    color:white;
+}
+.dateinfo {
+    position: absolute;
+    font-family: courier;
+    top: 8.5px;
+    left: 5px;
+    font-size: 12px;
+}
+.dateb,
+.click,
+.name {
+    background-color: #76d0de;
+}
+.namebox {
+    position: relative;
+}
+.nametag {
+    position: absolute;
+    color: white;
+    border: none;
+    z-index: 1;
+    top: 2px;
+    left: 10px;
+    font-size: 1.6em;
+    transition: all 0.5s;
+}
+.focused .nametag {
+    top: -26px;
+    left: 0px;
+    color: #358e9c;
+    font-size: 1.3em;
+}
+.datefocused .dateinfo {
+    top: -12px;
+    left: 0px;
+    color: #358e9c;
+    font-size: 0.7em;
+}
+.Wmessage {
+    position: absolute;
+    bottom: -40px;
+    color: rgb(229,9,19);
+    font-size: 12px;
+    width: 110%;
+}
+.sizeWarner {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    left: 50%;
+    top: -70px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    display: none;
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    z-index: 100;
+}
+.sizeRem {
+    width: 100%;
+    font-size: 0.65em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noteEx {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.noteEx div:nth-of-type(1) {
+    width:100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+}
+.noteEx div:nth-of-type(2) {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#noteEx2 span {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-height: 500px) {
+    .noteEx {
+        flex-direction: row;
+    }
+    .noteEx div:nth-of-type(1),
+    .noteEx div:nth-of-type(2) {
+        height: 100%;
+    }
+}

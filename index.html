@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Age</title>
+    <link rel="stylesheet" href="POstyle.css">
+    <link rel="stylesheet" href="PSstyle.css">
+    <link rel="stylesheet" href="clockPhase.css">
+</head>
+<body>
+    <div class="sizeWarner">
+        <div class="sizeRem"></div>
+        <div class="noteEx">
+            <div id="noteEx1"></div>
+            <div id="noteEx2">
+                <span>&times;</span>
+            </div>
+        </div>
+    </div>
+    <!-- first era -->
+    <div class="phaseOne">
+        <div class="namebox">
+            <input class="name">
+            <div class="nametag">Name</div>
+        </div>        
+        <div class="interTime">
+            <div>Birth Time</div>
+            <input class ="inputBT" type="number" placeholder="Hour">
+            <input class ="inputBT" type="number" placeholder="Minute">
+            <select id="maridian">
+                <option value="1">A.M.</option>
+                <option value="2">P.M.</option>
+            </select>
+        </div>        
+        <div class="datebtn">
+            <input class="dateb" type="date">
+            <button class="click">Start</button>
+            <div class="dateinfo">Date of birth</div>
+        </div>  
+        <div class="Wmessage"></div>  
+    </div>
+    <!-- second era -->
+    <div class="phaseSecond">
+        <div class="order wel"><span id="sing">W</span></div>
+        <div class="order clientName"></div>
+        <div class="notice"></div>
+    </div>
+    <!-- Third era -->
+    <div class="phaseThird">
+        <div class="Floaterpt">
+            <span class="clockInclude"></span>
+        </div>
+        <div class="subC clock">
+            <div class="Hand yearH"></div>
+            <div class="Hand monthH"></div>
+            <div class="Hand dayH"></div>
+            <div id="secR"><i class="subC"></i></div>
+            <span style="--ang:1;"><b>1</b></span>
+            <span style="--ang:2;"><b>2</b></span>
+            <span style="--ang:3;"><b>3</b></span>
+            <span style="--ang:4;"><b>4</b></span>
+            <span style="--ang:5;"><b>5</b></span>
+            <span style="--ang:6;"><b>6</b></span>
+            <span style="--ang:7;"><b>7</b></span>
+            <span style="--ang:8;"><b>8</b></span>
+            <span style="--ang:9;"><b>9</b></span>
+            <span style="--ang:10;"><b>10</b></span>
+            <span style="--ang:11;"><b>11</b></span>
+            <span style="--ang:12;"><b>12</b></span>
+            <div class="subC clockHr">
+                <div class="Hand hourH"></div>
+                <span style="--ang:1;"><b>&#x2022;</b></span>
+                <span style="--ang:2;"><b>&#x2022;</b></span>
+                <span style="--ang:3;"><b>3</b></span>
+                <span style="--ang:4;"><b>&#x2022;</b></span>
+                <span style="--ang:5;"><b>&#x2022;</b></span>
+                <span style="--ang:6;"><b>6</b></span>
+                <span style="--ang:7;"><b>&#x2022;</b></span>
+                <span style="--ang:8;"><b>&#x2022;</b></span>
+                <span style="--ang:9;"><b>9</b></span>
+                <span style="--ang:10;"><b>&#x2022;</b></span>
+                <span style="--ang:11;"><b>&#x2022;</b></span>
+                <span style="--ang:12;"><b>12</b></span>
+            </div>
+            <div class="subC clockMi">
+                <div class="Hand minH"></div>
+                <span style="--ang:1;"><b>&#x2022;</b></span>
+                <span style="--ang:2;"><b>&#x2022;</b></span>
+                <span style="--ang:3;"><b>3</b></span>
+                <span style="--ang:4;"><b>&#x2022;</b></span>
+                <span style="--ang:5;"><b>&#x2022;</b></span>
+                <span style="--ang:6;"><b>6</b></span>
+                <span style="--ang:7;"><b>&#x2022;</b></span>
+                <span style="--ang:8;"><b>&#x2022;</b></span>
+                <span style="--ang:9;"><b>9</b></span>
+                <span style="--ang:10;"><b>&#x2022;</b></span>
+                <span style="--ang:11;"><b>&#x2022;</b></span>
+                <span style="--ang:12;"><b>12</b></span>
+            </div>
+            <div class="subC clockMil">
+                <div class="Hand milH"></div>
+                <div class="cent"></div>
+                <span style="--ang:1;"><b>&#x2022;</b></span>
+                <span style="--ang:2;"><b>&#x2022;</b></span>
+                <span id="spaceCor1" style="--ang:3;"><b>250</b></span>
+                <span style="--ang:4;"><b>&#x2022;</b></span>
+                <span style="--ang:5;"><b>&#x2022;</b></span>
+                <span style="--ang:6;"><b>500</b></span>
+                <span style="--ang:7;"><b>&#x2022;</b></span>
+                <span style="--ang:8;"><b>&#x2022;</b></span>
+                <span id="spaceCor2" style="--ang:9;"><b>750</b></span>
+                <span style="--ang:10;"><b>&#x2022;</b></span>
+                <span style="--ang:11;"><b>&#x2022;</b></span>
+                <span style="--ang:12;"><b>1000</b></span>
+            </div>
+        </div>
+    </div>
+    <!-- fourth(Second-Sub) era -->
+    <div class="phaseFourth">
+        <span class="truthSen"></span>
+        <div class="slideblock">
+            <span class="truthSen"></span>
+            <span class="slider"></span>
+        </div>
+        <span class="truthSen"></span>
+    </div>
+    <!-- fifth era -->
+    <div class="phaseFifth">
+        <div class="opacFifth containersL"></div>
+        <div class="containersL">
+            <div class="timeForma">
+                <span class="opacFifth fromafo">completed:</span>
+                <span class="opacFifth numbT"></span>
+            </div>
+            <div class="timeForma">
+                <span class="opacFifth fromafo">competing:</span>
+                <span class="opacFifth numbT"></span>
+            </div>
+        </div>
+        <div class="containersL">
+            <span class="opacFifth remBot"></span>
+        </div>
+        <div class="opacFifth redCarpet">
+            <span class="opacFifth kyt"></span>
+        </div>
+    </div>
+    <!-- Border -->
+    <script src="algorithm.js"></script>
+    <script src="responsiveStyle.js"></script>
+    <script src="clockSet.js"></script>
+</body>
+</html>
