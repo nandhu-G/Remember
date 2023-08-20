@@ -190,7 +190,7 @@ if (noticeItems[6] < 400) {
     datebar.disabled = true;
 }
 
-if (noticeItems[6] > 907 || noticeItems[7] > 1134) Sizeinform('• Your device is not recommended for this website.!', 10);
+if (noticeItems[6] > 1300 || noticeItems[7] > 1134) Sizeinform('• Your device is not recommended for this website.!', 10);
 
 let test;
 function Sizeinform(content, exsist) {
